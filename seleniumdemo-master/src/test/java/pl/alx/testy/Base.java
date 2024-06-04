@@ -30,7 +30,7 @@ public class Base {
         System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
     }
 
-    private static void addItems(WebDriver driver, String[] itemsNeeded) {
+    static void addItems(WebDriver driver, String[] itemsNeeded) {
         int j = 0;
         List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
         for (int i = 0; i < products.size(); i++) {
