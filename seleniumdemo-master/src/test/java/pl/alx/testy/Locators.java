@@ -64,7 +64,7 @@ public class Locators {
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File("screen1.png"));
 
-        driver.close();
+//        driver.close();
 
     }
 
