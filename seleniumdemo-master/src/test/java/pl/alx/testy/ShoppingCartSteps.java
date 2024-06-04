@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 public class ShoppingCartSteps {
     WebDriver driver;
     WebDriverWait w;
@@ -18,7 +20,7 @@ public class ShoppingCartSteps {
     public void i_am_on_the_shopping_page() {
         System.setProperty("webdriver.chrome.driver", "src/test/java/pl/alx/driver/chromedriver.exe");
         driver = new ChromeDriver();
-        w = new WebDriverWait(driver,5);
+        w = new WebDriverWait(driver, Duration.ofSeconds(5));
         driver.get("https://rahulshettyacademy.com/seleniumPractise/");
     }
 
